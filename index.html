@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="AGE: Amharic, Ge’ez and English Parallel Dataset">
+  <meta name="keywords" content="AGE Dataset, Ge’ez">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AGE: Amharic, Ge’ez and English Parallel Dataset
+  </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">AGE: Amharic, Ge’ez and English Parallel Dataset</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://henokb.github.io/">Henok Biadglign Ademtew</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/mikiyasgirma/">Mikiyas Girma Birbo</a><sup>2</sup>,</span>
+            
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Ethiopian AI Institute,</span>
+            <span class="author-block"><sup>2</sup>Maharashi International University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openreview.net/pdf?id=tHNfskz2WG"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-desktop"></i>
+                  </span>
+                  <span>Model</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://docs.google.com/presentation/d/1ObmkYFBmyOb9ufuJVHbR1kbvU-FtOAHiIl_PAnOLhEg/edit?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa fa-file"></i>
+                  </span>
+                  <span>Slides</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/HenokB/AGE-Dataset"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/HenokB/AGE-Dataset/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+           African languages are not well-represented in Natural Language Processing (NLP). The main reason is a lack of resources for training models. Low-resource languages, such as Amharic and Ge’ez, cannot benefit from modern NLP methods because of the lack of high-quality datasets. This paper presents AGE, an opensource tripartite alignment of Amharic, Ge’ez, and English parallel dataset. Additionally, we introduced a novel, 1,000 Ge’ez-centered sentences sourced from areas such as news and novels. Furthermore, we developed a model from a multilingual pre-trained language model, which brings 12.29 and 30.66 for English to Ge’ez and Ge’ez to English, respectively, and 9.39 and 12.29 for Amharic-Ge’ez and Ge’ez-Amharic respectively. Our dataset and models are available at the AGE Dataset repository.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src=""
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+<section class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">About Ge'ez(ግዕዝ)</h2>
+      <div class="content has-text-justified">
+
+      <p>
+        Ge’ez (ግዕዝ), which is also known as Ethiopic, is one of the oldest Semitic languages (Tareke et al.,
+2002) and its alphabets is among the oldest alphabets still in use in the world of today. Furthermore, the Ge’ez language is among the four languages (Sabaean, Greek, and Arabic) that have
+been and continue to be used for ancient inscriptional arts. Ge’ez is currently not an actively spoken language nor a native tongue of any people. Its use is limited to the liturgical language of
+the Ethiopian Orthodox Tewahedo, Eritrean Orthodox Tewahedo, Ethiopian Catholic, and Eritrean Catholic Christians. It is also used during prayer and at regularly scheduled public religious feast celebrations. The Bible dominates the literature, and it comprises the Deuterocanonical books. According to (Molla & Tabor, 2018), this language also has many medieval and
+early modern original texts. The majority of the essential works are correspondingly the literature of the Ethiopian Orthodox Tewahedo Church. These works include Christian Orthodox liturgy (service
+books, prayers, hymns), hagiographies, and a range of Patristic literature. Around 200 texts were written about home-grown Ethiopian saints from the fourteenth to the nineteenth century. The religious alignment of Ge’ez literature was due to traditional education being the obligation of priests
+and monks. More info about the alphabet on Ge’ez can be found in the appendix section.
+      </p>
+      <div class="columns is-centered">
+        <img src="./static/images/Geez-Amharic-Alphabet-Picture.gif" style="width: 50%;">
+
+
+      </div>
+
+  
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Related Works</h2>
+      <div class="content has-text-justified">
+
+      <p>
+        One of the major challenges in developing MT models for Ge’ez is the lack of public data. There
+        were attempts to compile parallel corpora for Ge’ez to English and Ge’ez to Amharic MT tasks, but
+        the development was unsatisfactory.
+      </p>
+      <div class="columns is-centered">
+        <img src="./static/images/related work.png" style="width: 50%;">
+
+
+      </div>
+
+  
+    </div>
+  </div>
+</div>
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Results</h2>
+          <p>
+            Our results reveal a clear gradient in BLEU score performance across
+various language pairs. For translations from Amharic to Ge’ez and vice versa, the model achieved
+BLEU scores of 9.03 and 12.26 for evaluation, with a slight increase in the prediction phase to 9.39
+and 12.87, respectively. Our BLEU scores showed a dramatic increase in scores for the Ge’ez to
+English language pair. Notably, English translations demonstrated superior performance, with the
+Ge’ez to English pair achieving the highest scores of 30.35 in evaluation and 30.66 in prediction,
+indicating a robust model capability in this language direction.
+
+          </p>
+          <img src="./static/images/score.png">
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-3">Data collection</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Our dataset, sourced from diverse sources, exhibited significant textual inconsistencies. We found
+portions of the data excessively disordered and removed them from our collection. The figure shows
+the general framework for the dataset development process.
+            </p>
+            <img src="./static/images/data collection.png" ><br></br>
+            <h2>Sample Output</h2>
+            <p>
+              
+            </p>
+            <img src="./static/images/Results.png" >
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!-- Concurrent Work. -->
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            There's a lot of excellent work that was introduced around the same time as ours.
+          </p>
+          <p>
+            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+          </p>
+          <p>
+            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
+            both use deformation fields to model non-rigid scenes.
+          </p>
+          <p>
+            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+          </p>
+          <p>
+            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{
+  ademtew2024age,
+  author    = {Henok Biadglign Ademtew and Mikiyas Girma Birbo},
+  title     = {{AGE}: Amharic, Ge{\textquoteright}ez and English Parallel Dataset},
+  booktitle = {5th Workshop on African Natural Language Processing},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=tHNfskz2WG}
+  }</code></pre>
+
+
+
+</div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://openreview.net/pdf?id=tHNfskz2WG">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/HenokB/AGE-Dataset" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
