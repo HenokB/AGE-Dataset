@@ -30,7 +30,7 @@ Below is an example row:
 ### መጽሐፈ ፡ ኩፋሌ (Book of Jubilees)
 We have the Book of Jubilees only in Ge'ez and English
 
-`Kufele.xlsx` - data and associated metadata in xlsx format.
+`Kufale.xlsx` - data and associated metadata in xlsx format.
 
 `Kufale.json` - data and associated metadata in json format.
 
