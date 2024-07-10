@@ -27,6 +27,25 @@ Below is an example row:
 ]
 ```
 
+### መጽሐፈ ፡ ኩፋሌ (Book of Jubilees)
+We have the Book of Jubilees only in Ge'ez and English
+
+`Kufele.xlsx` - data and associated metadata in xlsx format.
+
+`Kufale.json` - data and associated metadata in json format.
+
+Below is an example row:
+
+```json
+[
+    {
+        "gez": "ዝንቱ ነገረ ኩፋሌ መዋዕላተ ሕግ ወለስምዕ ለግብረ ዓመታት ለተሳብዖቶሙ ለኢዮቤልውሳቲሆሙ ውስተ ኵሉ ዓመታተ ዓለም በከመ ተናገሮ ለሙሴ በደብረ ሲና አመ ዐርገ ይንሣእ ጽላተ እብን ሕግ ወትእዛዝ በቃለ እግዚአብሔር በከመ ይቤሎ ይዕርግ ውስተ ርእሰ ደብር።",
+        "eng": "These are the words regarding the divisions of the times of the law and of the testimony, of the events of the years, of the weeks of their jubilees throughout all the years of eternity as he related (them) to Moses on Mt. Sinai when he went up to receive the stone tablets — the law and the commandments — on the Lord’s orders as he had told him that he should come up to the summit of the mountain."
+    }
+
+]
+```
+
 ## Dataset Structure
 
 The dataset is available in both CSV and JSON formats, with columns tagged for each language:
