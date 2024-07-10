@@ -11,7 +11,7 @@ The AGE dataset is an open-source tripartite alignment of Amharic, Ge’ez, and 
 Our dataset was sourced from diverse materials, and we removed excessively disordered portions to ensure quality. The dataset development process is illustrated in the accompanying figure.
 
 Below is an example row:
-```
+```json
 [
     {
         "amh": "ንጉሡ ዳዊትም ሸመገለ ዕድሜውም በዛ፤ ልብስም ደረቡለት፥ ነገር ግን አይሞቀውም ነበር።",
